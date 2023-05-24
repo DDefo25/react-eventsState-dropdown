@@ -1,43 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-import Store from './components/Store';
+import Dropdown from './components/Dropdown';
 
 function App() {
-  const products = [{
-    name: "Nike Metcon 2",
-    price: "130",
-    color: "red",
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/1.jpg"
+  const list = [{
+    name: "Profile Information",
+    href: "#",
+    active: true
   }, {
-    name: "Nike Metcon 2",
-    price: "130",
-    color: "green",
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/2.jpg"
+    name: "Change Password",
+    href: "#"
   }, {
-    name: "Nike Metcon 2",
-    price: "130",
-    color: "blue",
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/3.jpg"
+    name: "Become PRO",
+    href: "#"
   }, {
-    name: "Nike Metcon 2",
-    price: "130",
-    color: "black",
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/4.jpg"
+    name: "Help",
+    href: "#"
   }, {
-    name: "Nike free run",
-    price: "170",
-    color: "black",
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/7.jpg"
-  }, {
-    name: "Nike Metcon 3",
-    price: "150",
-    color: "green",
-    img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/5.jpg"
+    name: "Log Out",
+    href: "#"
   }];
 
 
   return ( 
-    <Store products={products} />
+    <Dropdown list={list} />
   );
 }
 
