@@ -22,7 +22,7 @@ function ShopCard({card}) {
 }
 
 ShopCard.propTypes = {
-
+    card: PropTypes.objectOf(PropTypes.string)
 }
 
 export default ShopCard;

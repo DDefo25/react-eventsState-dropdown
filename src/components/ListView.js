@@ -10,7 +10,7 @@ function ListView({cards}) {
 }
 
 ListView.propTypes = {
-
+    cards: PropTypes.array
 }
 
 export default ListView

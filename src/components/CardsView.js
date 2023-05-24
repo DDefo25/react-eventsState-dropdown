@@ -10,7 +10,7 @@ function CardsView({cards}) {
 }
 
 CardsView.propTypes = {
-
+    cards: PropTypes.array
 }
 
 export default CardsView
